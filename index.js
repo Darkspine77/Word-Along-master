@@ -2,9 +2,9 @@ var Discord = require('discord.js');
 
 var bot = new Discord.Client();
 
-var token = 'MzQwNjM2ODQ2ODg5NjMxNzQ1.DF1jJA.EPiFPAFGxqZh-DoVLuopNlaVUxA';
+var token = 'BOT_TOKEN';
 
-var inv = "https://discordapp.com/oauth2/authorize?client_id=340636846889631745&scope=bot&permissions=268436496"
+var inv = "https://discordapp.com/oauth2/authorize?client_id=BOT_IDscope=bot&permissions=268436496"
 
 bot.login(token);
 
@@ -81,7 +81,7 @@ bot.on('message', message => {
 			messageReply += "Thank you for reporting a problem you found, The Word Along team apologizes for any inconvenience you have experienced! \n"
 			messageReply += "```"
 			message.channel.sendMessage(messageReply)
-			bot.fetchUser('163809334852190208').then(user => 
+			bot.fetchUser('BOT_OWNER_ID').then(user => 
 				user.createDM().then(dm => {
 						dm.sendMessage(finalMessage)
 					}
