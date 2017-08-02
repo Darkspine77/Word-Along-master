@@ -45,7 +45,7 @@ bot.on('voiceStateUpdate', (oldMember,newMember) => {
 						channel.overwritePermissions(role.id, {
 							READ_MESSAGES: true
 						})
-						channel.overwritePermissions('340636846889631745', {
+						channel.overwritePermissions('BOT_ID', {
 							READ_MESSAGES: true
 						})
 						channel.overwritePermissions(vc.guild.id, {
